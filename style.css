@@ -23,9 +23,17 @@ h1 {
     border-radius: 25px;
 }
 
-#buttonsMain {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+.page-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+
+}
+.page-button:hover {
+  background-color: #0056b3;
 }
