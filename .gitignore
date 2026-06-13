@@ -58,3 +58,9 @@ Desktop.ini
 *.njsproj
 *.sln
 *.swp
+
+# ==========================================
+# Files Created by Compile.py
+# ==========================================
+/Services/index.html
+/Projects/index.html
