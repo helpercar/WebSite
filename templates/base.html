@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Helpercar's Website{% endblock %}</title>
     <!-- Root-relative links prevent styles from breaking on sub-pages -->
-    <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="{{ path_base }}style.css">
+    <script src="{{ path_base }}script.js"></script>
 </head>
 <body>
     <nav>
         <ul class="tab-menu">
-            <button class="tab-item" onclick="switchTab('/')">Home</button>
-            <button class="tab-item" onclick="switchTab('/Projects')">Projects</button>
-            <button class="tab-item" onclick="switchTab('/Services')">Services</button>
+            <button class="tab-item" onclick="switchTab('{{ path_base }}')">Home</button>
+            <button class="tab-item" onclick="switchTab('{{ path_base }}Projects')">Projects</button>
+            <button class="tab-item" onclick="switchTab('{{ path_base }}Services')">Services</button>
         </ul>
     </nav>
 
