@@ -3,7 +3,7 @@ name: Deploy Jinja2 Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger on pushes to main
+      - main
 
 permissions:
   contents: write
@@ -29,5 +29,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist  # The folder your script outputs to
-          branch: gh-pages  # The branch GitHub Pages will serve from
+          folder: .  # Deploys from root where compile.py puts the files
+          branch: gh-pages
