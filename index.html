@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helpercar's Cool Website</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Root-relative links prevent styles from breaking on sub-pages -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
-    <div id="headerDiv">
-        <h1>Welcome to Helpercar's Website!</h1>
-    </div>
-    <div style="display: flex;">
-        <div id="flex1">
-            <h2>whoami</h2>
-            <article>
-                Hello, I am Marco Mejia Chimal, also known as Helpercar online.
-                I am a class of 2026 Graduate with a Bachelor's in Science, Computer Science Degree.
-                I am currently working on projects and will upload them here once I complete them.
-                Make sure to check often!
-            </article>
+    <nav>
+        <ul class="tab-menu">
+            <button class="tab-item" onclick="switchTab('/')">Home</button>
+            <button class="tab-item" onclick="switchTab('/Projects')">Projects</button>
+            <button class="tab-item" onclick="switchTab('/Services')">Services</button>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Main dynamic content injects here -->
+        <div id="headerDiv">
+            <h1>Welcome to Helpercar's Website!</h1>
         </div>
-        <div id="flex1">
-            <h2>Contact</h2>
-            <article>
-                If you want to contact me, you can email me at <a href="mailto:marcomejia.hc@gmail.com">marcomejia.hc@gmail.com</a>
-            </article>
+        
+        <div style="display: flex;">
+            <div id="flex1">
+                <h2>whoami</h2>
+                <article>
+                    Hello, I am Marco Mejia Chimal, also known as Helpercar online. 
+                    I am a class of 2026 Graduate with a Bachelor's in Science, Computer Science Degree. 
+                    I am currently working on projects and will upload them here once I complete them. 
+                    Make sure to check often!
+                </article>
+            </div>
+            <div id="flex1">
+                <h2>Contact</h2>
+                <article>
+                    If you want to contact me, you can email me at 
+                    <a href="mailto:marcomejia.hc@gmail.com">marcomejia.hc@gmail.com</a>
+                </article>
+            </div>
         </div>
-    </div>
-    <div>
-        <a href="projects.html" class="page-button">View Projects</a>
-    </div>
+        
+        <div>
+            <a href="/Projects" class="page-button">View Projects</a>
+            <a href="/Services/" class="page-button">View Services</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026- </p>
+    </footer>
 </body>
 </html>

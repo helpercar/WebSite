@@ -1,0 +1,33 @@
+name: Deploy Jinja2 Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/uses/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Jinja2
+        run: pip install jinja2
+
+      - name: Compile Templates
+        run: python compile.py
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist  # The folder your script outputs to
+          branch: gh-pages  # The branch GitHub Pages will serve from
