@@ -1,0 +1,60 @@
+# ==========================================
+# Dependencies and Package Managers
+# ==========================================
+node_modules/
+jspm_packages/
+web_modules/
+.npm
+.eslintcache
+
+# ==========================================
+# Build Outputs and Production Deploys
+# ==========================================
+dist/
+build/
+out/
+.sass-cache/
+.parcel-cache/
+.turbo/
+
+# ==========================================
+# Environments and Private API Keys
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+
+# ==========================================
+# Operating System Junk
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# IDE and Code Editor Settings
+# ==========================================
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# WebStorm / IntelliJ
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
