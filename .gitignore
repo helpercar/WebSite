@@ -62,5 +62,4 @@ Desktop.ini
 # ==========================================
 # Files Created by Compile.py
 # ==========================================
-Projects/*
-Blog/*
+# None because git doesn't track empty directories
