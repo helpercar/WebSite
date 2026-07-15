@@ -8,7 +8,7 @@ def build_site():
     pages = {
         'index.html': 'index.html',
         'projects.html': 'Projects/index.html',
-        'services.html': 'Services/index.html'
+        'blog.html': 'Blog/index.html'
     }
     
     for template_name, output_path in pages.items():
