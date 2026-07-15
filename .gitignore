@@ -62,5 +62,5 @@ Desktop.ini
 # ==========================================
 # Files Created by Compile.py
 # ==========================================
-Projects/
-Blog/
+Projects/*
+Blog/*
